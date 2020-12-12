@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./main/index.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/*" href="../Images/logo.png" />
+  <title>Image-Filter : Steganography</title>
+
+
+</head>
+
+<body>
+    <h1>Try Steganography</h1>
+
+  <!-- description -->
+  <div class="container">
+    <div id="d_para">
+      <ul>
+        <li>
+          Image Steganography refers to the process of <br>hiding data within an
+          image file.
+        </li>
+        <li>Corresponding image shows how <br>STEGANOGRAPHY is implemented.</li>
+        <li>
+          Have an Amazing experience of <br>HIDING IMAGE inside an IMAGE,below.
+        </li>
+        <li>Try it now!</li>
+      </ul>
+    </div>
+
+    <div>
+      <img id="imgs" src="./main/steg_img.JPG" alt="Example of Steganography Image" />
+    </div>
+  </div>
+
+  <div>
+    <fieldset>
+      <legend>UPLOAD AN IMAGE</legend>
+      <canvas id="FIRST_CANVAS_ID"></canvas>
+      <input type="file" value="image/*" multiple="false" id="FOREGROUND_INP_ID" onchange="upload1()" />
+    </fieldset>
+  </div>
+
+  <div>
+    <fieldset>
+        <canvas id="DECRYPT_CANVAS_ID"></canvas>
+        <input type="button" value="DeCrypt" id="decrypt_btn" onclick="decrypt()" />
+        <input type="button" value="Clear" id="clear_btn" onclick="clearStegenography()" style="float: left;" />
+    </fieldset>
+  </div>
+  <!-- <div id="tagline">
+    <p>
+      Try our Other Features
+    </p>
+  </div>
+  <div id="feature">
+    <p id="one">
+      <a href="steganography.html" target="_blank">Steganography</a>
+    </p>
+    <p id="two">
+      <a href="greenscreen.html" target="_blank">GreenScreen</a>
+    </p>
+    <p id="three">
+      <a href="overlay.html" target="_blank">Overlay</a>
+    </p>
+    <p id="four">
+      <a href="rainbow.html" target="_blank">Rainbow</a>
+    </p>
+  </div> -->
+  <script src="./main/index.js"></script>
+  <script src="./main/SimpleImage.js"></script>
+</body>
+
+</html>
